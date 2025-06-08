@@ -16,10 +16,11 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     const result = await sendEmail(formData);
 
     if (result.success) {
-    setStatus('success');
-    event.currentTarget.reset(); 
+        setStatus('success');
+        const form = event.currentTarget as HTMLFormElement;
+        form?.reset();
     } else {
-    setStatus('error');
+        setStatus('error');
     }
 };
 
