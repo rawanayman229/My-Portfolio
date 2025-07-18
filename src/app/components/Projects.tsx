@@ -12,6 +12,7 @@ const projectsData = [
     gitUrl: "https://github.com/rawanayman229/Stream-Vibe",
     previewUrl: "https://stream-vibe-three.vercel.app"
 },
+
 {
     id: 2,
     title: "React JS Restaurant Website",
@@ -43,6 +44,14 @@ const projectsData = [
     image: "projects/5.png",
     gitUrl: "https://github.com/rawanayman229/Weather-App",
     previewUrl: "https://rawanayman229.github.io/Weather-App/",
+},
+{
+    id: 6,
+    title: "E-Learning App",
+    description: "Educational platform using NextJs and Typescript",
+    image: "projects/6.png",
+    gitUrl: "https://github.com/rawanayman229/Educational-platform",
+    previewUrl: "https://educational-platform-sandy.vercel.app/",
 }
 ];
 
