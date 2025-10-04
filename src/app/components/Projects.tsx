@@ -39,11 +39,11 @@ const projectsData = [
 },
 {
     id: 5,
-    title: "Weather App",
-    description: "Weather app using HTML, CSS and JavaScript.",
+    title: "Weather Dashboard App",
+    description: "Weather app using HTML, CSS, JavaScript and OpenWeatherMap API.",
     image: "projects/5.png",
-    gitUrl: "https://github.com/rawanayman229/Weather-App",
-    previewUrl: "https://rawanayman229.github.io/Weather-App/",
+    gitUrl: "https://github.com/rawanayman229/Weather-Dashboard-App",
+    previewUrl: "https://rawanayman229.github.io/Weather-Dashboard-App/",
 },
 {
     id: 6,
