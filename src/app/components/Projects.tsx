@@ -15,22 +15,14 @@ const projectsData = [
 
 {
     id: 2,
-    title: "React JS Restaurant Website",
-    description: "Upper-Class Restaurant you can book a table or see the menu. Technologies: React JS, TypeScript, Tailwind CSS.",
+    title: "Job-Application-Tracker",
+    description: "A web application that allows users to track their job applications and manage them .Technologies: Vite React JS, TypeScript,Redux Toolkit and Tailwind CSS.",
     image: "projects/2.png",
-    gitUrl: "https://github.com/rawanayman229/Restaurant-Nique",
-    previewUrl: "https://nique-restaurant.vercel.app/",
+    gitUrl: "https://github.com/rawanayman229/Job-Application-Tracker",
+    previewUrl: "https://job-application-tracker-seven-pied.vercel.app/",
 },
 {
     id: 3,
-    title: "React JS Pet-Store Website",
-    description: "A pet store for pets selling and supplies. Technologies: React JS , TypeScript and Tailwind CSS.",
-    image: "projects/3.png",
-    gitUrl: "https://github.com/rawanayman229/Pet-Store-App",
-    previewUrl: "https://monito-pet-store-alpha.vercel.app/",
-},
-{
-    id: 4,
     title: "Calculator App",
     description: "Simple calculator using HTML, CSS and JavaScript.",
     image: "projects/4.png",
@@ -38,7 +30,7 @@ const projectsData = [
     previewUrl: "https://rawanayman229.github.io/Calculator-Project/",
 },
 {
-    id: 5,
+    id: 4,
     title: "Weather Dashboard App",
     description: "Weather app using HTML, CSS, JavaScript and OpenWeatherMap API.",
     image: "projects/5.png",
@@ -46,7 +38,7 @@ const projectsData = [
     previewUrl: "https://rawanayman229.github.io/Weather-Dashboard-App/",
 },
 {
-    id: 6,
+    id: 5,
     title: "E-Learning App",
     description: "Educational platform using NextJs and Typescript",
     image: "projects/6.png",

@@ -36,7 +36,9 @@ const TAB_DATA = [
     content: (
     <ul className="list-disc pl-2">
         <li>Full-Stack Web Development Diploma at Raya Academy - 2023</li>
-        <li>Online Frontend Intern at Tech Cell - 2024</li>
+        <li>Online Frontend Training at TechCell - 2024</li>
+        <li>Worked as a volunteer FrontEnd mentor at HumaVolve organization</li>
+        <li>Remote Internship at Elevvo for one month - 2025</li>
     </ul>
     ),
 },
@@ -75,7 +77,7 @@ return (
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base lg:text-lg text-white/70">
-            I am a Motivated and detail-oriented Junior Front-End Developer with strong
+            I am a motivated and detail-oriented Front-End web Developer with strong
             knowledge of modern web development technologies. Experienced in
             building responsive, dynamic web applications using HTML5, CSS3,
             JavaScript, Bootstrap, React.js, Next.js, Tailwind CSS, and
@@ -94,7 +96,7 @@ return (
         </div>
     </div>
     </section>
-  );
+);
 };
 
 export default About;
