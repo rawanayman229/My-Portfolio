@@ -33,8 +33,8 @@ return (
             />
             </h1>
             <p className="text-white/70 mt-4 text-lg">
-            Front-End Web Developer with a strong foundation in modern web technologies and frameworks including ReactJS, Next.Js, TypeScript,
-            Bootstrap and Tailwind CSS.
+            Motivated Front-End Web Developer with practical experience building responsive web applications using React/Next.js. Strong foundation in modern web technologies, version control,
+            and collaborative workflows. Focused on clean UI, accessible UX, and shipping maintainable code.
             </p>
             <div className="mt-8 flex gap-4">
             <Link href="/#contact"
