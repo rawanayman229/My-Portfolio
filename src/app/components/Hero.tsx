@@ -41,7 +41,7 @@ return (
             className="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
                 Contact Me
             </Link>
-            <Link href="/Rawan-Ayman-CV.pdf" target="_blank"
+            <Link href="/rawan-ayman-cv.pdf" target="_blank"
             className="p-[2px] rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
                 <span className="block bg-primary text-white rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
                 Download CV
