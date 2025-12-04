@@ -25,7 +25,7 @@ const projectsData = [
     id: 3,
     title: "Calculator App",
     description: "Simple calculator using HTML, CSS and JavaScript.",
-    image: "projects/4.png",
+    image: "projects/3.png",
     gitUrl: "https://github.com/rawanayman229/Calculator-Project",
     previewUrl: "https://rawanayman229.github.io/Calculator-Project/",
 },
@@ -33,7 +33,7 @@ const projectsData = [
     id: 4,
     title: "Weather Dashboard App",
     description: "Weather app using HTML, CSS, JavaScript and OpenWeatherMap API.",
-    image: "projects/5.png",
+    image: "projects/4.png",
     gitUrl: "https://github.com/rawanayman229/Weather-Dashboard-App",
     previewUrl: "https://rawanayman229.github.io/Weather-Dashboard-App/",
 },
@@ -41,10 +41,18 @@ const projectsData = [
     id: 5,
     title: "E-Learning App",
     description: "Educational platform using NextJs and Typescript",
-    image: "projects/6.png",
+    image: "projects/5.png",
     gitUrl: "https://github.com/rawanayman229/Educational-platform",
     previewUrl: "https://educational-platform-sandy.vercel.app/",
-}
+},
+{
+    id: 6,
+    title: "Sportive-Website",
+    description: "A modern sportive website offering high-quality fitness clothes. Technologies: HTML,CSS, Bootstrap",
+    image: "projects/6.png",
+    gitUrl: "https://github.com/rawanayman229/Sportive-Website",
+    previewUrl: "https://rawanayman229.github.io/Sportive-Website/"
+},
 ];
 
 const cardVariants = {
