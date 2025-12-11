@@ -49,7 +49,7 @@ const projectsData = [
     id: 6,
     title: "Sportive-Website",
     description: "A modern sportive website offering high-quality fitness clothes. Technologies: HTML,CSS, Bootstrap",
-    image: "projects/6.png",
+    image: "projects/6.jpg",
     gitUrl: "https://github.com/rawanayman229/Sportive-Website",
     previewUrl: "https://rawanayman229.github.io/Sportive-Website/"
 },
