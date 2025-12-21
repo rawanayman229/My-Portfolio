@@ -25,7 +25,7 @@ export default function RootLayout({
 
     <body
   className={`${inter.className} bg-gradient-to-br 
-  from-gray-600 via-purple-300 to-pink-200 text-gray-500  relative overflow-x-hidden`}>
+  from-indigo-200 via-purple-300 to-pink-200 text-gray-500  relative overflow-x-hidden`}>
 
 <Providers>
   <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
