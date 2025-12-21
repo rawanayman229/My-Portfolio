@@ -17,7 +17,7 @@ return (
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
+            <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900  leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
                 Hello, I&apos;m{" "}
             </span>
@@ -32,18 +32,18 @@ return (
                 repeat={Infinity}
             />
             </h1>
-            <p className="text-white/70 mt-4 text-lg">
+            <p className="text-gray-900 /70 mt-4 text-lg">
             Motivated Front-End Web Developer with practical experience building responsive web applications using React/Next.js. Strong foundation in modern web technologies, version control,
             and collaborative workflows. Focused on clean UI, accessible UX, and shipping maintainable code.
             </p>
             <div className="mt-8 flex gap-4">
             <Link href="/#contact"
-            className="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
+            className="px-6 py-3 rounded-full font-semibold text-gray-900  bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
                 Contact Me
             </Link>
             <Link href="/rawan-ayman-cv.pdf" target="_blank"
             className="p-[2px] rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
-                <span className="block bg-primary text-white rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
+                <span className="block bg-primary text-gray-900  rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
                 Download CV
                 </span>
             </Link>

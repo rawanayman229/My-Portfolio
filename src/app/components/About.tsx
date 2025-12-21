@@ -45,10 +45,10 @@ const TAB_DATA = [
 ];
 
 const TabButton = ({ active, selectTab, children }: { active: boolean, selectTab: () => void, children: React.ReactNode }) => {
-const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
+const buttonClasses = active ? "text-gray-900 " : "text-[#ADB7BE]";
 return (
     <button onClick={selectTab}>
-    <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+    <p className={`mr-3 font-semibold hover:text-gray-900  ${buttonClasses}`}>
         {children}
     </p>
     <motion.div
@@ -70,13 +70,13 @@ const handleTabChange = (id: string) => {
 };
 
 return (
-    <section id="about" className="py-24 text-white">
+    <section id="about" className="py-24 text-gray-900 ">
     <div className="container mx-auto px-6">
         <div className="md:grid md:grid-cols-2 gap-8 items-center xl:gap-16">
         <Image src="/images/about-image.png" alt="code design" width={500} height={500} className="rounded-lg" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-            <p className="text-base lg:text-lg text-white/70">
+            <h2 className="text-4xl font-bold text-gray-900  mb-4">About Me</h2>
+            <p className="text-base lg:text-lg text-gray-900 /70">
             I am a motivated and detail-oriented Front-End web Developer with strong
             knowledge of modern web development technologies. Experienced in
             building responsive, dynamic web applications using HTML5, CSS3,

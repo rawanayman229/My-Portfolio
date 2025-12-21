@@ -4,9 +4,9 @@ import  Image  from 'next/image';
 
 const Footer = () => {
 return (
-    <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
+    <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-gray-900 dark:text-white">
     <div className="container p-12 flex justify-between">
-    <Link href="/" className="text-2xl font-bold text-white">
+    <Link href="/" className="text-2xl font-bold text-gray-900 dark:text-white">
     <Image
         src="/logo.png"
         alt="Logo"
@@ -14,7 +14,7 @@ return (
         height={70}
         />
         </Link>
-         <p className="text-slate-600">  © {new Date().getFullYear()} All rights reserved.</p>
+        <p className="text-slate-600">  © {new Date().getFullYear()} All rights reserved.</p>
     </div>
     </footer>
 );

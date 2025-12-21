@@ -7,7 +7,7 @@ return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary/50 backdrop-blur-md">
     <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center border-b border-white/10 pb-4">
-        <Link href="/" className="text-2xl font-bold text-white">
+        <Link href="/" className="text-2xl font-bold text-gray-900">
             <Image
                 src="/logo.png"
                 alt="Logo"
@@ -16,10 +16,10 @@ return (
                 />
         </Link>
         <nav>
-            <ul className="flex space-x-8 text-white/80">
-            <li><Link href="#about" className="hover:text-white transition-colors duration-300">About</Link></li>
-            <li><Link href="#projects" className="hover:text-white transition-colors duration-300">Projects</Link></li>
-            <li><Link href="#contact" className="hover:text-white transition-colors duration-300">Contact</Link></li>
+            <ul className="flex space-x-8 text-gray-900/80">
+            <li><Link href="#about" className="hover:text-gray-900 transition-colors duration-300">About</Link></li>
+            <li><Link href="#projects" className="hover:text-gray-900 transition-colors duration-300">Projects</Link></li>
+            <li><Link href="#contact" className="hover:text-gray-900 transition-colors duration-300">Contact</Link></li>
             </ul>
         </nav>
         </div>

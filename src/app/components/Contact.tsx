@@ -27,7 +27,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 return (
     <section id="contact" className="py-24">
     <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-8 items-start bg-gray-800 p-10 rounded-xl">
         <div>
             <h5 className="text-3xl font-bold text-white my-2">Contact Me:</h5>
             <p className="text-[#ADB7BE] mb-4 max-w-md">

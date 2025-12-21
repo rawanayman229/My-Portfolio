@@ -16,7 +16,7 @@ const projectsData = [
 {
     id: 2,
     title: "Job-Application-Tracker",
-    description: "A web application that allows users to track their job applications and manage them .Technologies: Vite React JS, TypeScript,Redux Toolkit and Tailwind CSS.",
+    description: "A web application that allows users to track their job applications.Technologies: Vite React, TypeScript,Redux Toolkit and Tailwind CSS.",
     image: "projects/2.png",
     gitUrl: "https://github.com/rawanayman229/Job-Application-Tracker",
     previewUrl: "https://job-application-tracker-seven-pied.vercel.app/",
@@ -67,7 +67,7 @@ const isInView = useInView(ref, { once: true });
 return (
     <section ref={ref} id="projects" className="py-24">
     <div className="container mx-auto px-6">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        <h2 className="text-center text-4xl font-bold text-gray-900  mt-4 mb-8 md:mb-12">
         My Projects
         </h2>
         <motion.div
