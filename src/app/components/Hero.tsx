@@ -42,7 +42,7 @@ return (
                 Contact Me
             </Link>
             <Link href="/rawan-ayman-cv.pdf" target="_blank"
-            className="p-[2px] rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
+            className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
                 <span className="block bg-primary text-gray-900  rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
                 Download CV
                 </span>
@@ -63,7 +63,7 @@ return (
                 alt="Developer Avatar"
                 width={400}
                 height={400}
-                className="z-10 translate-y-7 absolute"
+                className="z-10 object-cover w-full h-full"
             />
             </div>
         </motion.div>

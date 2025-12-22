@@ -45,7 +45,7 @@ const TAB_DATA = [
 ];
 
 const TabButton = ({ active, selectTab, children }: { active: boolean, selectTab: () => void, children: React.ReactNode }) => {
-const buttonClasses = active ? "text-gray-900 " : "text-[#ADB7BE]";
+const buttonClasses = active ? "text-gray-900 " : "text-gray-700";
 return (
     <button onClick={selectTab}>
     <p className={`mr-3 font-semibold hover:text-gray-900  ${buttonClasses}`}>
@@ -76,7 +76,7 @@ return (
         <Image src="/images/about-image.png" alt="code design" width={500} height={500} className="rounded-lg" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-gray-900  mb-4">About Me</h2>
-            <p className="text-base lg:text-lg text-gray-900 /70">
+            <p className="text-base lg:text-lg text-gray-900">
             I am a motivated and detail-oriented Front-End web Developer with strong
             knowledge of modern web development technologies. Experienced in
             building responsive, dynamic web applications using HTML5, CSS3,
@@ -84,7 +84,7 @@ return (
             TypeScript. Skilled in both collaborative and independent
             environments with a passion for clean UI and intuitive UX
             </p>
-            <div className="flex flex-row justify-start mt-8">
+            <div className="flex flex-row justify-start mt-8 ">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
             <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certifications</TabButton>

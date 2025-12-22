@@ -74,7 +74,7 @@ return (
         initial="initial"
         animate="animate"
         transition={{ staggerChildren: 0.1 }}
-        className="grid md:grid-cols-3 gap-8 md:gap-12 mt-8"
+        className="grid md:grid-cols-3 gap-5 md:gap-12 mt-5"
         >
         {projectsData.map((project, index) => (
             <motion.div
