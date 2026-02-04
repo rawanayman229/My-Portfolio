@@ -53,6 +53,14 @@ const projectsData = [
     gitUrl: "https://github.com/rawanayman229/Sportive-Website",
     previewUrl: "https://rawanayman229.github.io/Sportive-Website/"
 },
+{
+    id: 7,
+    title: "CodElevo-Company",
+    description: "A Software Company that build modern websites, mobile apps, UI designs, and smart AI solutions.",
+    image: "projects/7.jpg",
+    gitUrl: "https://github.com/rawanayman229/CodElevo",
+    previewUrl: "https://codelevo.vercel.app/"
+},
 ];
 
 const cardVariants = {
