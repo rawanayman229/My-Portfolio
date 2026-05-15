@@ -15,6 +15,9 @@ const TAB_DATA = [
         <li>Bootstrap</li>
         <li>Tailwind CSS</li>
         <li>TypeScript</li>
+        <li>Flutter</li>
+        <li>Dart</li>
+        <li>Firebase</li>
         <li>Git, GitHub</li>
         <li>Restful APIs</li>
     </ul>
@@ -31,14 +34,17 @@ const TAB_DATA = [
     ),
 },
 {
-    title: "Certifications",
-    id: "certifications",
+    title: "Experiences & Internships",
+    id: "Experiences & Internships",
     content: (
     <ul className="list-disc pl-2">
-        <li>Full-Stack Web Development Diploma at Raya Academy - 2023</li>
-        <li>Online Frontend Training at TechCell - 2024</li>
-        <li>Worked as a volunteer FrontEnd mentor at HumaVolve organization</li>
-        <li>Remote Internship at Elevvo for one month - 2025</li>
+        <li>Front-End Web Developer at Deltana Group Company</li>
+        <li>Technical Support-Web Hosting at Affsquare (Thamara Cloud Project)</li>
+        <li>Full-Stack Web Development Diploma at Raya Academy</li>
+        <li>Remote Internship at TechCell </li>
+        <li>Remote Internship at Elevvo</li>
+        <li>FrontEnd mentor at HumaVolve organization</li>
+        <li>Flutter Diploma at Amit Academy</li>
     </ul>
     ),
 },
@@ -81,13 +87,14 @@ return (
             knowledge of modern web development technologies. Experienced in
             building responsive, dynamic web applications using HTML5, CSS3,
             JavaScript, Bootstrap, React.js, Next.js, Tailwind CSS, and
-            TypeScript. Skilled in both collaborative and independent
+            TypeScript, along with mobile applications using Flutter and Firebase.
+            Skilled in both collaborative and independent
             environments with a passion for clean UI and intuitive UX
             </p>
             <div className="flex flex-row justify-start mt-8 ">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>Skills</TabButton>
             <TabButton selectTab={() => handleTabChange("education")} active={tab === "education"}>Education</TabButton>
-            <TabButton selectTab={() => handleTabChange("certifications")} active={tab === "certifications"}>Certifications</TabButton>
+            <TabButton selectTab={() => handleTabChange("Experiences & Internships")} active={tab === "Experiences & Internships"}>Experiences & Internships</TabButton>
             </div>
             <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab)?.content}

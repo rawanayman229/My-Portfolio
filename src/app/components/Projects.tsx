@@ -10,7 +10,7 @@ const projectsData = [
     description: "A movie website to watch new release and trending movies trailer. Technologies: Next JS, Tailwind CSS, Supabase, TMDB API.",
     image: "projects/1.png",
     gitUrl: "https://github.com/rawanayman229/Stream-Vibe",
-    previewUrl: "https://stream-vibe-three.vercel.app"
+    previewUrl: "https://streamm-vibe.netlify.app/"
 },
 
 {
@@ -19,7 +19,7 @@ const projectsData = [
     description: "A web application that allows users to track their job applications.Technologies: Vite React, TypeScript,Redux Toolkit and Tailwind CSS.",
     image: "projects/2.png",
     gitUrl: "https://github.com/rawanayman229/Job-Application-Tracker",
-    previewUrl: "https://job-application-tracker-seven-pied.vercel.app/",
+    previewUrl: "https://jobb-tracker.netlify.app/",
 },
 {
     id: 3,
@@ -43,7 +43,7 @@ const projectsData = [
     description: "Educational platform using NextJs and Typescript",
     image: "projects/5.png",
     gitUrl: "https://github.com/rawanayman229/Educational-platform",
-    previewUrl: "https://educational-platform-sandy.vercel.app/",
+    previewUrl: "https://eduu-questt.netlify.app/",
 },
 {
     id: 6,
@@ -59,7 +59,7 @@ const projectsData = [
     description: "A Software Company that build modern websites, mobile apps, UI designs, and smart AI solutions.",
     image: "projects/7.jpg",
     gitUrl: "https://github.com/rawanayman229/CodElevo",
-    previewUrl: "https://codelevo.vercel.app/"
+    previewUrl: "https://codelevo.netlify.app/"
 },
 ];
 

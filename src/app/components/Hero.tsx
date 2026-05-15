@@ -33,8 +33,9 @@ return (
             />
             </h1>
             <p className="text-gray-900 /70 mt-4 text-lg">
-            Motivated Front-End Web Developer with practical experience building responsive web applications using React/Next.js. Strong foundation in modern web technologies, version control,
-            and collaborative workflows. Focused on clean UI, accessible UX, and shipping maintainable code.
+            Frontend Developer with hands-on experience building responsive and scalable web applications using HTML, CSS, JS React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, and Bootstrap, 
+            along with mobile applications using Flutter and Firebase.
+            Experienced in creating modern user interfaces, API integration, responsive design, and frontend performance optimization. 
             </p>
             <div className="mt-8 flex gap-4">
             <Link href="/#contact"
