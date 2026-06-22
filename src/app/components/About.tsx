@@ -20,6 +20,8 @@ const TAB_DATA = [
         <li>Firebase</li>
         <li>Git, GitHub</li>
         <li>Restful APIs</li>
+        <li>NodeJS</li>
+        <li>MongoDB</li>
     </ul>
     ),
 },

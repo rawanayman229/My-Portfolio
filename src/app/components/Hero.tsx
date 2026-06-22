@@ -25,7 +25,7 @@ return (
             <TypeAnimation
                 sequence={[
                 'Rawan Ayman', 1500,
-                'Fornt-End Developer', 1500,
+                'Front-End Developer', 1500,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -39,8 +39,10 @@ return (
             </p>
             <div className="mt-8 flex gap-4">
             <Link href="/#contact"
-            className="px-6 py-3 rounded-full font-semibold text-gray-900  bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
-                Contact Me
+            className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
+                <span className="block bg-primary text-gray-900  rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
+               Contact Me
+                </span>
             </Link>
             <Link href="/Rawan-CV.pdf" target="_blank"
             className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
