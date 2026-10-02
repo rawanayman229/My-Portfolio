@@ -2,12 +2,6 @@
 
 import { Resend } from 'resend';
 
-const resendApiKey = process.env.RESEND_API_KEY;
-if (!resendApiKey) {
-throw new Error("RESEND_API_KEY is not set in the environment variables.");
-}
-const resend = new Resend(resendApiKey);
-
 export const sendEmail = async (formData: FormData) => {
 const senderEmail = formData.get('email');
 const subject = formData.get('subject');
@@ -25,6 +19,12 @@ if (!message || typeof message !== 'string') {
 }
 
 try {
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+    console.error("RESEND_API_KEY is not set in the environment variables.");
+    return { error: 'Email service is not configured.' };
+    }
+    const resend = new Resend(resendApiKey);
     const { data, error } = await resend.emails.send({
     from: 'Portfolio Contact Form <onboarding@resend.dev>', 
     to: 'rawanrooney229@gmail.com', 
