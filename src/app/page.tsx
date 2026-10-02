@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-primary">
+    <main className="flex min-h-screen flex-col">
       <div className="container mx-auto px-12 py-4">
         <Hero />
         <About />

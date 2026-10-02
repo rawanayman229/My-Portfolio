@@ -8,8 +8,16 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rawan Ayman's Portfolio",
-  description: "A portfolio built with Next.js, TypeScript, and Tailwind CSS.",
+  title: "Rawan Ayman | Front-End Developer",
+  description:
+    "Front-End Developer specializing in React, Next.js, TypeScript and Flutter. Explore my projects and get in touch.",
+  openGraph: {
+    title: "Rawan Ayman | Front-End Developer",
+    description:
+      "Front-End Developer specializing in React, Next.js, TypeScript and Flutter.",
+    images: ["/images/hero-image.png"],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,8 +32,8 @@ export default function RootLayout({
       </head>
 
     <body
-  className={`${inter.className} bg-gradient-to-br 
-  from-indigo-200 via-purple-300 to-pink-200 text-gray-500  relative overflow-x-hidden`}>
+  className={`${inter.className} bg-fixed bg-gradient-to-br 
+  from-indigo-300 via-purple-300 to-pink-300 text-gray-800 relative overflow-x-hidden`}>
 
 <Providers>
   <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">

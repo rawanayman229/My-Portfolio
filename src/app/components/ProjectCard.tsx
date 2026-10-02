@@ -1,61 +1,59 @@
 import React from 'react';
 import { Code, Eye } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ProjectCardProps {
-imgUrl: string;
-title: string;
-description: string;
-gitUrl: string;
-previewUrl: string;
+  imgUrl: string;
+  title: string;
+  description: string;
+  tags: string[];
+  gitUrl: string;
+  previewUrl: string;
 }
 
-const cardVariants = {
-initial: { y: 50, opacity: 0 },
-animate: { y: 0, opacity: 1 },
-};
-
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }: ProjectCardProps) => {
+const ProjectCard = ({ imgUrl, title, description, tags, gitUrl, previewUrl }: ProjectCardProps) => {
   return (
-    <motion.div 
-      variants={cardVariants}
-      className="flex flex-col h-full w-full" // Ensures the card takes full width of grid cell
-    >
-      {/* Image Container */}
-      <div className="relative aspect-video w-full overflow-hidden rounded-t-xl group">
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-center bg-no-repeat bg-cover transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:blur-[2px]"
-          style={{ backgroundImage: `url(${imgUrl})` }}
-        ></div>
-
-        {/* Overlay */}
-        <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-opacity-70 transition-all duration-500 ease-in-out">
+    <article className="group flex flex-col h-full w-full overflow-hidden rounded-xl bg-[#181818] shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+      <div className="relative aspect-video w-full overflow-hidden">
+        <Image
+          src={`/${imgUrl}`}
+          alt={`${title} screenshot`}
+          fill
+          sizes="(min-width: 768px) 33vw, 100vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 flex items-center justify-center gap-3 bg-[#181818]/70 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300">
           <Link
             href={gitUrl}
             target="_blank"
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white transition-colors duration-300"
+            aria-label={`${title} source code`}
+            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white transition-colors"
           >
-            <Code className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:text-white" />
+            <Code className="h-8 w-8 text-[#ADB7BE] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           </Link>
           <Link
             href={previewUrl}
             target="_blank"
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white transition-colors duration-300"
+            aria-label={`${title} live demo`}
+            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white transition-colors"
           >
-            <Eye className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:text-white" />
+            <Eye className="h-8 w-8 text-[#ADB7BE] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           </Link>
         </div>
       </div>
-
-      {/* Content Container */}
-      <div className="text-white flex-grow rounded-b-xl bg-[#181818] py-6 px-4 flex flex-col">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE] flex-grow line-clamp-3 md:line-clamp-none">
-          {description}
-        </p>
+      <div className="text-white flex-grow py-5 px-5 flex flex-col">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-[#ADB7BE] flex-grow">{description}</p>
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {tags.map((t) => (
+            <li key={t} className="rounded-full bg-purple-500/20 text-purple-200 text-xs font-medium px-3 py-1">
+              {t}
+            </li>
+          ))}
+        </ul>
       </div>
-    </motion.div>
+    </article>
   );
 };
 

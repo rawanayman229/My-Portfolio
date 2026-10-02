@@ -5,75 +5,110 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Github, Linkedin } from 'lucide-react';
+
+const stats = [
+  { value: '7+', label: 'Projects built' },
+  { value: '3+', label: 'Internships & roles' },
+  { value: '2', label: 'Platforms: Web & Mobile' },
+];
 
 const Hero = () => {
-return (
-<section id="home" className="pt-36 pb-24">
-    <div className="container mx-auto px-6">
+  return (
+    <section id="home" className="pt-36 pb-24">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Text Content */}
-        <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-        >
-            <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900  leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-                Hello, I&apos;m{" "}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-sm font-medium text-gray-800 shadow-sm">
+              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              Open to work
             </span>
-            <br />
-            <TypeAnimation
+            <h1 className="mt-4 text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                Hello, I&apos;m
+              </span>
+              <br />
+              <TypeAnimation
                 sequence={[
-                'Rawan Ayman', 1500,
-                'Front-End Developer', 1500,
+                  'Rawan Ayman', 1500,
+                  'Front-End Developer', 1500,
+                  'React & Next.js Specialist', 1500,
+                  'Flutter Developer', 1500,
                 ]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
-            />
+              />
             </h1>
-            <p className="text-gray-900 /70 mt-4 text-lg">
-            Frontend Developer with hands-on experience building responsive and scalable web applications using HTML, CSS, JS React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, and Bootstrap, 
-            along with mobile applications using Flutter and Firebase.
-            Experienced in creating modern user interfaces, API integration, responsive design, and frontend performance optimization. 
+            <p className="text-gray-800 mt-5 text-lg max-w-xl">
+              I build fast, responsive and accessible web apps with React, Next.js and TypeScript —
+              and cross-platform mobile apps with Flutter. Clean UI, clean code, great UX.
             </p>
-            <div className="mt-8 flex gap-4">
-            <Link href="/#contact"
-            className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
-                <span className="block bg-primary text-gray-900  rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
-               Contact Me
-                </span>
-            </Link>
-            <Link href="/Rawan-Ayman-CV.pdf" target="_blank"
-            className="p-2 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 hover:scale-105 transition-transform">
-                <span className="block bg-primary text-gray-900  rounded-full px-5 py-2.5 hover:bg-transparent transition-colors duration-300">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <Link
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  setTimeout(() => document.getElementById('email')?.focus({ preventScroll: true }), 700);
+                }}
+                className="rounded-full bg-gradient-to-br from-purple-600 to-pink-500 text-white font-semibold px-7 py-3 shadow-lg hover:scale-105 transition-transform"
+              >
+                Contact Me
+              </Link>
+              <Link
+                href="/Rawan-Ayman-CV.pdf"
+                target="_blank"
+                className="rounded-full border-2 border-purple-600 text-gray-900 font-semibold px-7 py-3 hover:bg-white/60 transition-colors"
+              >
                 Download CV
-                </span>
-            </Link>
+              </Link>
+              <div className="flex gap-3 ml-1">
+                <Link href="https://github.com/rawanayman229" target="_blank" aria-label="GitHub">
+                  <Github className="w-7 h-7 text-gray-800 hover:text-purple-600 transition-colors" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/rawan-ayman-891000277/" target="_blank" aria-label="LinkedIn">
+                  <Linkedin className="w-7 h-7 text-gray-800 hover:text-purple-600 transition-colors" />
+                </Link>
+              </div>
             </div>
-        </motion.div>
+            <dl className="mt-10 grid grid-cols-3 gap-4 max-w-md">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <dt className="text-3xl font-extrabold text-gray-900">{s.value}</dt>
+                  <dd className="text-sm text-gray-700">{s.label}</dd>
+                </div>
+              ))}
+            </dl>
+          </motion.div>
 
-          {/* Right Column: Avatar Image */}
-        <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center md:justify-end"
-        >
-            <div className="relative overflow-hidden w-80 h-80  rounded-full border-2 border-pink-700 bg-transparent flex items-center justify-center">
-            <Image
-                src="/images/hero-image.png"
-                alt="Developer Avatar"
-                width={400}
-                height={400}
-                className="z-10 object-cover w-full h-full"
-            />
+          >
+            <div className="rounded-full p-1.5 bg-gradient-to-br from-purple-600 to-pink-500 shadow-2xl shadow-purple-500/30">
+              <div className="relative overflow-hidden w-72 h-72 md:w-80 md:h-80 rounded-full bg-white/40">
+                <Image
+                  src="/images/hero-image.png"
+                  alt="Rawan Ayman"
+                  width={400}
+                  height={400}
+                  priority
+                  className="z-10 object-cover w-full h-full"
+                />
+              </div>
             </div>
-        </motion.div>
+          </motion.div>
         </div>
-    </div>
+      </div>
     </section>
-);
+  );
 };
 
 export default Hero;

@@ -39,13 +39,13 @@ return (
             Connect with me on social media:
             </h5>
             <div className="socials flex flex-row gap-2">
-            <Link href="https://github.com/rawanayman229" target="_blank">
+            <Link href="https://github.com/rawanayman229" target="_blank" aria-label="GitHub">
                 <Github className="w-8 h-8 text-gray-500 hover:text-pink-500" />
             </Link>
-            <Link href="https://www.linkedin.com/in/rawan-ayman-891000277/" target="_blank">
+            <Link href="https://www.linkedin.com/in/rawan-ayman-891000277/" target="_blank" aria-label="LinkedIn">
                 <Linkedin className="w-8 h-8 text-gray-500 hover:text-pink-500" />
             </Link>
-            <Link href="https://www.instagram.com/rooney.artist/" target="_blank">
+            <Link href="https://www.instagram.com/rooney.artist/" target="_blank" aria-label="Instagram">
                 <Instagram className="w-8 h-8 text-gray-500 hover:text-pink-500" />
             </Link>
             </div>
