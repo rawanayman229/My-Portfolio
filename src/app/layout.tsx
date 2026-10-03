@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
 
     <body
-  className={`${inter.className} bg-fixed bg-gradient-to-br 
+  className={`${inter.className} bg-fixed bg-linear-to-br 
   from-indigo-300 via-purple-300 to-pink-300 text-gray-800 relative overflow-x-hidden`}>
 
 <Providers>

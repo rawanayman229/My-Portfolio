@@ -65,7 +65,7 @@ const Projects = () => {
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
         <h2 className="text-center text-4xl font-bold text-gray-900">My Projects</h2>
-        <div className="mx-auto mt-3 mb-4 h-1 w-20 rounded-full bg-gradient-to-r from-purple-600 to-pink-500" />
+        <div className="mx-auto mt-3 mb-4 h-1 w-20 rounded-full bg-linear-to-br from-purple-600 to-pink-500" />
         <p className="text-center text-gray-800 mb-10 max-w-xl mx-auto">
           A selection of web apps I&apos;ve built. Hover a card to view the code or the live demo.
         </p>

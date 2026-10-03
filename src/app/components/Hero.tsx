@@ -28,7 +28,7 @@ const Hero = () => {
               Open to work
             </span>
             <h1 className="mt-4 text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-pink-600">
                 Hello, I&apos;m
               </span>
               <br />
@@ -56,7 +56,7 @@ const Hero = () => {
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                   setTimeout(() => document.getElementById('email')?.focus({ preventScroll: true }), 700);
                 }}
-                className="rounded-full bg-gradient-to-br from-purple-600 to-pink-500 text-white font-semibold px-7 py-3 shadow-lg hover:scale-105 transition-transform"
+                className="rounded-full bg-linear-to-br from-purple-600 to-pink-500 text-white font-semibold px-7 py-3 shadow-lg hover:scale-105 transition-transform"
               >
                 Contact Me
               </Link>
@@ -92,7 +92,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center md:justify-end"
           >
-            <div className="rounded-full p-1.5 bg-gradient-to-br from-purple-600 to-pink-500 shadow-2xl shadow-purple-500/30">
+            <div className="rounded-full p-1.5 bg-linear-to-br from-purple-600 to-pink-500 shadow-2xl shadow-purple-500/30">
               <div className="relative overflow-hidden w-72 h-72 md:w-80 md:h-80 rounded-full bg-white/40">
                 <Image
                   src="/images/hero-image.png"
