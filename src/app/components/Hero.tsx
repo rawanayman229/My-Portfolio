@@ -61,7 +61,7 @@ const Hero = () => {
                 Contact Me
               </Link>
               <Link
-                href="/Rawan-Ayman-CV.pdf"
+                href="/Rawan Ayman CV-Frontend.pdf"
                 target="_blank"
                 className="rounded-full border-2 border-purple-600 text-gray-900 font-semibold px-7 py-3 hover:bg-white/60 transition-colors"
               >

@@ -47,7 +47,7 @@ const TAB_DATA = [
       <ol className="relative border-l-2 border-purple-400 ml-2 space-y-4">
         {EXPERIENCE.map((e, i) => (
           <li key={i} className="pl-5 relative">
-            <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-gradient-to-br from-purple-600 to-pink-500" />
+            <span className="absolute -left-1.75 top-1.5 h-3 w-3 rounded-full bg-linear-to-br from-purple-600 to-pink-500" />
             <p className="font-semibold text-gray-900">{e.role}</p>
             <p className="text-sm text-gray-700">{e.org}</p>
           </li>
@@ -60,7 +60,7 @@ const TAB_DATA = [
     title: "Education",
     content: (
       <div className="border-l-2 border-purple-400 ml-2 pl-5 relative">
-        <span className="absolute -left-[7px] top-1.5 h-3 w-3 rounded-full bg-gradient-to-br from-purple-600 to-pink-500" />
+        <span className="absolute -left-1.75 top-1.5 h-3 w-3 rounded-full bg-linear-to-br from-purple-600 to-pink-500" />
         <p className="font-semibold text-gray-900">B.Sc. in Business Information Systems (BIS)</p>
         <p className="text-sm text-gray-700">Helwan University · Class of 2023</p>
       </div>
@@ -90,7 +90,7 @@ const About = () => {
           <Image src="/images/about-image.png" alt="Illustration of a developer workspace" width={500} height={500} className="rounded-lg" />
           <div className="mt-8 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-gray-900">About Me</h2>
-            <div className="mt-3 mb-5 h-1 w-20 rounded-full bg-gradient-to-r from-purple-600 to-pink-500" />
+            <div className="mt-3 mb-5 h-1 w-20 rounded-full bg-linear-to-r from-purple-600 to-pink-500" />
             <p className="text-base lg:text-lg text-gray-800">
               I&apos;m a detail-oriented Front-End Developer who enjoys turning ideas into polished,
               intuitive interfaces. I work with the React ecosystem and TypeScript on the web and
