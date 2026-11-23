@@ -27,9 +27,9 @@ const Header = () => {
               ))}
               <li>
                 <Link
-                  href="/Rawan-Ayman-CV.pdf"
+                  href="/RawanAymanCV.pdf"
                   target="_blank"
-                  className="rounded-full bg-gradient-to-br from-purple-600 to-pink-500 text-white px-4 py-1.5 text-sm hover:scale-105 transition-transform inline-block"
+                  className="rounded-full bg-linear-to-br from-purple-600 to-pink-500 text-white px-4 py-1.5 text-sm hover:scale-105 transition-transform inline-block"
                 >
                   Résumé
                 </Link>

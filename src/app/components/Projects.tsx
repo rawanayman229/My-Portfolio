@@ -19,7 +19,7 @@ const projectsData = [
     tags: ["Next.js", "Tailwind CSS", "Supabase", "TMDB API"],
     image: "projects/1.png",
     gitUrl: "https://github.com/rawanayman229/Stream-Vibe",
-    previewUrl: "https://stream-vibe-sepia.vercel.app/",
+    previewUrl: "stream-vibe.rawanrooney229.workers.dev",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projectsData = [
     tags: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
     image: "projects/2.png",
     gitUrl: "https://github.com/rawanayman229/Job-Application-Tracker",
-    previewUrl: "https://job-application-tracker-rawan-ayman.vercel.app/",
+    previewUrl: "job-application-tracker.rawanrooney229.workers.dev",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const projectsData = [
     tags: ["Next.js", "TypeScript"],
     image: "projects/5.png",
     gitUrl: "https://github.com/rawanayman229/Educational-platform",
-    previewUrl: "https://educational-platform-chi.vercel.app/",
+    previewUrl: "https://educational-platform-three.vercel.app/",
   },
   {
     id: 4,
