@@ -19,7 +19,7 @@ const projectsData = [
     tags: ["Next.js", "Tailwind CSS", "Supabase", "TMDB API"],
     image: "projects/1.png",
     gitUrl: "https://github.com/rawanayman229/Stream-Vibe",
-    previewUrl: "stream-vibe.rawanrooney229.workers.dev",
+    previewUrl: "https://stream-vibe.rawanrooney229.workers.dev",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projectsData = [
     tags: ["React", "TypeScript", "Redux Toolkit", "Tailwind CSS"],
     image: "projects/2.png",
     gitUrl: "https://github.com/rawanayman229/Job-Application-Tracker",
-    previewUrl: "job-application-tracker.rawanrooney229.workers.dev",
+    previewUrl: "https://job-application-tracker.rawanrooney229.workers.dev",
   },
   {
     id: 5,
